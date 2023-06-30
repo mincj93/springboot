@@ -1,0 +1,21 @@
+--Spring boot 노트
+
+-- java 파일 제외한 다른 파일들은 resources 폴더로 들어감.
+
+-- @SpringBootApplication
+어노테이션이 붙은 함수는 웹서버(tomcat)를 내장하고 있음
+
+-- 인텔리제이 기준 gradle 을 통해서 빌드를 하면 좀 느릴 수 있는데, file - setting - gradle 검색 해서 들어가보면
+build and run using 항목과 바로 아래 항목을 gradle 에서 인텔리제이로 바꿔주면 빠름
+
+-- logback 라이브러리, slf4j 라이브러리는 로깅을 위한 라이브러리들임.
+
+-- welcome page 설정하기
+resources/static/ 경로에 index.html 을 넣어주면 자동으로 첫 페이지라고 인식한다.
+
+-- 컨트롤러의 @GetMapping("hello") 를 쓰면 requestMapping 과 같은 역할인데 페이지를 찾는게 좀 다름.
+index.html 을 찾을 땐 static 폴더에 있지만 다른 일반 페이지들은 templates 폴더에 넣어야함
+
+★★★★★★★★★★
+필요한 기능을 찾는 방법
+웹사이트 spring.io - project 탭 - spring boot 선택 - 해당하는 버전 선택 - 스프링부트 매뉴얼 에서 검색하면 된다.
